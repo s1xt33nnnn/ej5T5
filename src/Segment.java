@@ -16,8 +16,29 @@ public class Segment {
 
     public double getModule(){
         int c1, c2;
-        Math.sqrt(c1*c1+c2*c2);
+        c1= endPoint.getX() - startPoint.getX();
+        c2= endPoint.getY() - startPoint.getY();
+        double module = Math.sqrt(c1*c1+c2*c2);
+        return module;
     }
 
+    @Override
+    public String toString(){
+        return "(" + startPoint.getX() + ", " + startPoint.getY() + ") - (" + endPoint.getX() + ", " + endPoint.getY() + ")";
+    }
 
+    public void setOffset(int offX, int offY){
+        startPoint.setX(startPoint.getX() + offX);  //más fácil hacerlo con startPoint.setOffset(offX, offY)
+        startPoint.setY(startPoint.getY() + offY);
+        endPoint.setX(endPoint.getX() + offX);
+        endPoint.setY(endPoint.getY() + offY);
+    }
+
+    public void setStartPoint(Point startPoint) {
+        this.startPoint = startPoint;
+    }
+
+    public void setEndPoint(Point endPoint) {
+        this.endPoint = endPoint;
+    }
 }
