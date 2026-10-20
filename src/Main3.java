@@ -5,5 +5,6 @@ public class Main3 {
         Segment segment = new Segment(p1,p2);
         segment.setOffset(4, 4);
         System.out.println(segment.toString());
+        System.out.println(segment.getModule());
     }
 }
