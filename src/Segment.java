@@ -42,5 +42,11 @@ public class Segment {
         this.endPoint = endPoint;
     }
 
+    public Point getStartPoint() {
+        return startPoint;
+    }
 
+    public Point getEndPoint() {
+        return endPoint;
+    }
 }
