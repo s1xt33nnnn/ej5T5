@@ -1,10 +1,8 @@
 public class Polygon {
-    private Point startPoint;
-    private Point endPoint;
+    private Point addPoint;
+    
 
-    public Polygon(){
-        startPoint = new Point();
-        endPoint = new Point();
     }
+
 
 }
