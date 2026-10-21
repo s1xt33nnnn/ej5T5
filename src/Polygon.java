@@ -16,7 +16,7 @@ public class Polygon {
     public String toString(){
         String s =" ";
         for (int j = 0; j< points.length; j++){
-            s = s + points + s + points;
+            s = s + points[points.length];
         }
         return s;
     }
