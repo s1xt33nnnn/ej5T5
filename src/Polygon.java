@@ -12,13 +12,19 @@ public class Polygon {
         }
     }
 
+    public double getLength(){
+        Segment.getModule() 51
+            * Point[j]
+    }
+
+
     @Override
     public String toString(){
         String s =" ";
         for (int j = 0; j< points.length; j++){
             s = s + points[j] +" - ";
         }
-        s = s+ points[0];
+        s = s + points[0];
         return s;
     }
 }
