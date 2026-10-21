@@ -12,12 +12,6 @@ public class Polygon {
         }
     }
 
-    public double getLength(){
-        Segment.getModule() 51
-            * Point[j]
-    }
-
-
     @Override
     public String toString(){
         String s =" ";
@@ -27,4 +21,20 @@ public class Polygon {
         s = s + points[0];
         return s;
     }
+
+    public double getLength(){
+        double length = 0;
+        for (int l=0; l < points.length - 1; l++){
+            Segment side = new Segment(points[l], points[l + 1]) ;
+            length += side.getModule();
+        }
+        Segment side = new Segment(points[points.length - 1], points[0]);
+        length += side.getModule();
+        return length;
+    }
+        public void setOffset(int offX,int offY){
+         for (int o = 0; o < points.length; o++){
+            points[o].setOffset(offX,offY);
+         }
+        }
 }
