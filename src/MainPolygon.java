@@ -6,7 +6,7 @@ public class MainPolygon {
         points[2] = new Point (5,2);
         points[3] = new Point (5,4);
 
-        Polygon p = new Polygon(points);
-        System.out.println(p);
+        Polygon polygon = new Polygon(points);
+        System.out.println(polygon);
     }
 }
