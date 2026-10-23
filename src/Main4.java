@@ -5,5 +5,9 @@ public class Main4 {
         r.moveTo(4, 7);
         System.out.println(r);
         r.toString();
+        Rectangle r2 = new Rectangle(new Point(1,1), 8, 6);
+        System.out.println(r2);
+        Rectangle r3 = new Rectangle(new Point(2, 0), new Point(4, 2));
+        System.out.println(r3);
     }
 }

@@ -32,7 +32,7 @@ public class Polygon {
         length += side.getModule();
         return length;
     }
-        public void setOffset(int offX,int offY){
+        public void setOffset (int offX,int offY){
          for (int o = 0; o < points.length; o++){
             points[o].setOffset(offX,offY);
          }

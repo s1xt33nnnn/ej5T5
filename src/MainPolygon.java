@@ -10,5 +10,7 @@ public class MainPolygon {
 
         System.out.println(polygon);
         System.out.println("This is the length of the points" + polygon.getLength());
+        polygon.setOffset(5, 5);
+        System.out.println(polygon);
     }
 }
