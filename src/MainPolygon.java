@@ -6,9 +6,6 @@ public class MainPolygon {
         points[2] = new Point (4, 4);
         points[3] = new Point (2,4);
 
-        polygon.setOffset();
-
-
         Polygon polygon = new Polygon(points);
 
         System.out.println(polygon);
