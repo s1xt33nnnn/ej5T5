@@ -51,4 +51,8 @@ public class Rectangle extends Point{
         return width*height;
     }
 
+    public int getPoint(){
+        return
+    }
+
 }
