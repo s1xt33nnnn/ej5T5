@@ -8,10 +8,10 @@ public class Rectangle extends Point{
         height = 0;
     }
 
-    public Rectangle(Point point, int width, int height){
+    public Rectangle(Point point, int newWidth, int newHeight){
         super(point.getX(), point.getY());
-        this.height = height;
-        this.width = width;
+        height = newHeight;
+        width = newWidth;
     }
 
     public Rectangle(Point p1, Point p2){
@@ -21,8 +21,24 @@ public class Rectangle extends Point{
     }
 
     public Rectangle(Segment segment){
-        super(segment.getStartPoint(),segment.getEndPoint());
+        super();
+        int x,y;
+        if(segment.getStartPoint().getX()< segment.getEndPoint().getX()){
+            x = (segment.getStartPoint().getX());
+        } else {
+            x = (segment.getEndPoint().getX());
+        }
+
+        if (segment.getStartPoint().getY() < segment.getEndPoint().getY()){
+            y = (segment.getStartPoint().getY());
+        } else{
+            y = (segment.getEndPoint().getY());
+        }
+        setX(x);
+        setY(y);
     }
+
+
 
 
     @Override
@@ -30,4 +46,9 @@ public class Rectangle extends Point{
         String s = " ";
         return super.toString() + " width: "+ width +", "+ "height: " + height;
     }
+
+    public int getArea(){
+        return width*height;
+    }
+
 }
