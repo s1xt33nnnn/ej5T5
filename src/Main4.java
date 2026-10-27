@@ -10,5 +10,9 @@ public class Main4 {
         Rectangle r3 = new Rectangle(new Point(2, 0), new Point(4, 2));
         System.out.println("This is the 3rd rectangle: " + r3);
         System.out.println("This is the area of the 2nd rectangle: " + r2.getArea());
+        System.out.println("this is the point" + r2.getPoint());
+        Rectangle r5 = new Rectangle(new Point(5,6),6,8);
+        System.out.println("Arriba-Izquierda: " + r5.getTopLeftPoint() + " Arriba-Derecha: " + r5.getTopRightPoint() + " Abajo-Izquierda: " + r5.getBottomLeftPoint() + " Abajo-Derecha: " + r5.getBottomRightPoint());
     }
+
 }

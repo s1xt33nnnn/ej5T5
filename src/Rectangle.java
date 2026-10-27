@@ -51,8 +51,40 @@ public class Rectangle extends Point{
         return width*height;
     }
 
-    public int getPoint(){
-        return
+    public Point getPoint(){
+        return new Point(getX(),getY());
+
     }
 
+    public Point getTopLeftPoint(){
+        return new Point(getX(),getY() + height);
+    }
+
+    public Point getTopRightPoint(){
+        return new Point(getX() + width, getY() + height);
+    }
+
+    public Point getBottomLeftPoint(){
+        return getPoint();
+    }
+
+    public Point getBottomRightPoint(){
+        return new Point(getX() + width, getY());
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
 }
